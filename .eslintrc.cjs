@@ -5,8 +5,10 @@ module.exports = {
     es2021: true,
   },
   extends: [
+    "prettier",
     "eslint:recommended",
     "plugin:react/recommended",
+    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/recommended",
   ],
   overrides: [],
@@ -16,8 +18,9 @@ module.exports = {
     sourceType: "module",
   },
   ignorePatterns: ["/src/assets/animation/*.json"],
-  plugins: ["react", "@typescript-eslint"],
+  plugins: ["react", "prettier", "@typescript-eslint"],
   rules: {
+    "prettier/prettier": "error",
     "no-console": "warn",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
