@@ -22,11 +22,11 @@ const WrapperSC = styled.div`
   //height: 100%;
 
   display: flex;
-  //justify-content: center;
+  justify-content: space-around;
   align-items: center;
   //flex-direction: column;
 
-  justify-content: center;
+  //justify-content: center;
   //align-items: center;
   flex-grow: 1;
 `;
@@ -49,12 +49,13 @@ const FrontendTextSC = styled.span`
 const DescriptionSC = styled.p`
   font-size: 18px;
   font-weight: 400;
-  max-width: 1060px;
+  max-width: 800px;
 `;
 
 const ImageSC = styled.img`
   width: 300px;
   height: 400px;
+  object-fit: contain;
 `;
 
 const SpanSC = styled.span`
