@@ -21,9 +21,14 @@ const WrapperSC = styled.div`
 
 const ContainerSC = styled.div``;
 
-const TitleSC = styled.h6`
+const TitleSC = styled.h5`
   font-size: 37px;
   font-weight: 600;
+`;
+
+const SubtitleSC = styled.h6`
+  font-weight: 500;
+  font-size: 30px;
 `;
 
 const FrontendTextSC = styled.span`
@@ -32,10 +37,19 @@ const FrontendTextSC = styled.span`
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
+
+  &::before {
+    font-family: "Arial", serif;
+    content: "{ ";
+  }
+  &::after {
+    font-family: "Arial", serif;
+    content: " }";
+  }
 `;
 
 const DescriptionSC = styled.p`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   max-width: 800px;
 `;
@@ -61,4 +75,5 @@ export const useMainStyles = () => ({
   SpanSC,
   TitleSC,
   FrontendTextSC,
+  SubtitleSC,
 });

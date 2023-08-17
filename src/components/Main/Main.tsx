@@ -12,9 +12,9 @@ const Main = () => {
           <TitleSC>
             {mainText.hello} <SpanSC>{mainText.name}</SpanSC>
           </TitleSC>
-          <TitleSC>
+          <SubtitleSC>
             Я <FrontendTextSC>{mainText.work}</FrontendTextSC> Разработчик
-          </TitleSC>
+          </SubtitleSC>
           <DescriptionSC>{mainText.description}</DescriptionSC>
         </ContainerSC>
         <ImageSC src={MyPhoto} alt="Фото замечательного человека" />
@@ -32,6 +32,7 @@ const {
   SpanSC,
   ImageSC,
   TitleSC,
+  SubtitleSC,
 } = useMainStyles();
 
 export default React.memo(Main);
