@@ -23,7 +23,7 @@ const ContainerSC = styled.div``;
 
 const TitleSC = styled.h6`
   font-size: 37px;
-  font-weight: 700;
+  font-weight: 600;
 `;
 
 const FrontendTextSC = styled.span`
