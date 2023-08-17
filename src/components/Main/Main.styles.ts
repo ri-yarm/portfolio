@@ -32,11 +32,11 @@ const SubtitleSC = styled.h6`
 `;
 
 const FrontendTextSC = styled.span`
-  background: #f30085;
-  background-image: linear-gradient(to right, #ec13ff, #14d5ef);
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-box-decoration-break: clone;
+  //background: #f30085;
+  //background-image: linear-gradient(to right, #ec13ff, #14d5ef);
+  //-webkit-text-fill-color: transparent;
+  //-webkit-background-clip: text;
+  //-webkit-box-decoration-break: clone;
 
   &::before {
     font-family: "Arial", serif;
