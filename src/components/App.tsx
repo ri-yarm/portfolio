@@ -1,6 +1,6 @@
 import Main from "./Main/Main";
 import Header from "./Header/Header";
-import MarqueeUI from "./Marque/Marquee";
+import MarqueeUI from "./Marquee/Marquee";
 
 function App() {
   return (
