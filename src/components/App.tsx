@@ -1,6 +1,6 @@
-import Header from "./Header/Header.tsx";
-import MarqueeUI from "./Marque/Marquee.tsx";
-import Main from "./Main/Main.tsx";
+import Main from "./Main/Main";
+import Header from "./Header/Header";
+import MarqueeUI from "./Marque/Marquee";
 
 function App() {
   return (

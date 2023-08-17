@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { useMarqueeStyles } from "./Marquee.styles.ts";
+import { useMarqueeStyles } from "./Marquee.styles";
 
 const MarqueeUI = () => {
   return (

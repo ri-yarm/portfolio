@@ -5,29 +5,17 @@ const MainSC = styled.main`
   color: #fff;
 
   width: 100%;
-  //height: 100%;
 
   padding: 0 28px;
 
   display: flex;
   flex-grow: 1;
-
-  //display: flex;
-  //justify-content: center;
-  //align-items: center;
-  //flex-direction: column;
 `;
 
 const WrapperSC = styled.div`
-  //height: 100%;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
-  //flex-direction: column;
-
-  //justify-content: center;
-  //align-items: center;
   flex-grow: 1;
 `;
 
