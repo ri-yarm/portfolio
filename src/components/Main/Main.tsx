@@ -2,6 +2,7 @@ import React from "react";
 
 import MyPhoto from "../../assets/images/myPhoto.jpg";
 import { useMainStyles } from "./Main.styles";
+import { mainText } from "../../lib/mock/mainText";
 
 const Main = () => {
   return (
@@ -9,18 +10,12 @@ const Main = () => {
       <WrapperSC>
         <ContainerSC>
           <TitleSC>
-            Даров! меня зовут <SpanSC>Ринат Ярмухаметов</SpanSC>
+            {mainText.hello} <SpanSC>{mainText.name}</SpanSC>
           </TitleSC>
           <TitleSC>
-            Я <FrontendTextSC>{"{Front-end}"}</FrontendTextSC> Разработчик
+            Я <FrontendTextSC>{mainText.work}</FrontendTextSC> Разработчик
           </TitleSC>
-          <DescriptionSC>
-            Front-end разработчик с опытом работы более 1 года в создании
-            сайтов, интерфейсов и веб-приложений. Продемонстрировал навыки в
-            Javascript, React и Redux за короткий период работы. Стремление к
-            постоянному совершенствованию, ориентированность на результат и
-            ответственное отношение к проектной деятельности.
-          </DescriptionSC>
+          <DescriptionSC>{mainText.description}</DescriptionSC>
         </ContainerSC>
         <ImageSC src={MyPhoto} alt="Фото замечательного человека" />
       </WrapperSC>
