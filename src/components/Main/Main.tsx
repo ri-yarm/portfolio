@@ -1,7 +1,8 @@
 import React from "react";
-import { useMainStyles } from "./Main.styles.ts";
 
 import MyPhoto from "../../assets/images/myPhoto.jpg";
+import { useMainStyles } from "./Main.styles";
+
 const Main = () => {
   return (
     <MainSC>
