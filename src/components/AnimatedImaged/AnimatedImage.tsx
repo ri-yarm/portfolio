@@ -33,6 +33,7 @@ const ImageSC = styled(animated.div)`
   height: 400px;
   border-radius: 72px 0px 56px 15px;
   background-image: url("images/myPhoto.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 `;
