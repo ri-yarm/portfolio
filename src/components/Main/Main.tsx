@@ -1,9 +1,9 @@
 import React from "react";
 
-import MyPhoto from "../../assets/images/myPhoto.jpg";
 import { useMainStyles } from "./Main.styles";
 import { mainText } from "../../lib/mock/mainText";
 import Trail from "./Trail/Trail";
+import AnimatedImage from "../AnimatedImaged/AnimatedImage";
 
 const Main = () => {
   return (
@@ -20,7 +20,7 @@ const Main = () => {
             <DescriptionSC>{mainText.description}</DescriptionSC>
           </Trail>
         </ContainerSC>
-        <ImageSC src={MyPhoto} alt="Фото замечательного человека" />
+        <AnimatedImage />
       </WrapperSC>
     </MainSC>
   );
@@ -33,7 +33,6 @@ const {
   FrontendTextSC,
   ContainerSC,
   SpanSC,
-  ImageSC,
   TitleSC,
   SubtitleSC,
 } = useMainStyles();
