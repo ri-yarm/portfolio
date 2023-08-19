@@ -27,25 +27,9 @@ const SpanSC = styled.span`
   color: #f30085;
 `;
 
-const IconsContainer = styled.ul`
-  list-style-type: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  flex-grow: 1;
-  gap: 40px;
-
-  svg {
-    width: 35px;
-    height: 35px;
-  }
-`;
-
 export const useHeaderStyles = () => ({
   HeaderSC,
   SpanSC,
   TextSC,
   ContainerSC,
-  IconsContainer,
 });

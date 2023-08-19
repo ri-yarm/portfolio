@@ -17,6 +17,8 @@ const WrapperSC = styled.div`
   justify-content: space-around;
   align-items: center;
   flex-grow: 1;
+
+  max-width: 1800px;
 `;
 
 const ContainerSC = styled.div`
