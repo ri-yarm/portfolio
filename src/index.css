@@ -15,9 +15,9 @@ body {
 
   margin: 0;
 
-  font-family: Josefin Sans;
+  font-family: "Raleway", sans-serif;
 
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
 
 #root {
@@ -27,4 +27,3 @@ body {
   display: flex;
   flex-direction: column;
 }
-

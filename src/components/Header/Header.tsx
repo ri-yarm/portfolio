@@ -1,5 +1,6 @@
 import React from "react";
 import { useHeaderStyles } from "./Header.styles";
+import SocietyBar from "../SocietyBar/SocietyBar";
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
           Р<SpanSC>Я</SpanSC>
         </TextSC>
       </ContainerSC>
+      <SocietyBar />
     </HeaderSC>
   );
 };

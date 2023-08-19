@@ -1,42 +1,22 @@
 import React from "react";
 
-import MyPhoto from "../../assets/images/myPhoto.jpg";
 import { useMainStyles } from "./Main.styles";
+import FlippedElement from "../FlippedElement/FlippedElement";
+import InfoText from "../InfoText/InfoText";
 
 const Main = () => {
   return (
     <MainSC>
       <WrapperSC>
         <ContainerSC>
-          <TitleSC>
-            Даров! меня зовут <SpanSC>Ринат Ярмухаметов</SpanSC>
-          </TitleSC>
-          <TitleSC>
-            Я <FrontendTextSC>{"{Front-end}"}</FrontendTextSC> Разработчик
-          </TitleSC>
-          <DescriptionSC>
-            Front-end разработчик с опытом работы более 1 года в создании
-            сайтов, интерфейсов и веб-приложений. Продемонстрировал навыки в
-            Javascript, React и Redux за короткий период работы. Стремление к
-            постоянному совершенствованию, ориентированность на результат и
-            ответственное отношение к проектной деятельности.
-          </DescriptionSC>
+          <InfoText />
         </ContainerSC>
-        <ImageSC src={MyPhoto} alt="Фото замечательного человека" />
+        <FlippedElement />
       </WrapperSC>
     </MainSC>
   );
 };
 
-const {
-  MainSC,
-  DescriptionSC,
-  WrapperSC,
-  FrontendTextSC,
-  ContainerSC,
-  SpanSC,
-  ImageSC,
-  TitleSC,
-} = useMainStyles();
+const { MainSC, WrapperSC, ContainerSC } = useMainStyles();
 
 export default React.memo(Main);

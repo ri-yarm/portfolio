@@ -6,11 +6,12 @@ const HeaderSC = styled.header`
 
   width: 100%;
 
-  padding: 28px;
+  padding: 14px 28px;
 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  //flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 `;
 
 const ContainerSC = styled.div`
@@ -18,7 +19,9 @@ const ContainerSC = styled.div`
   font-size: 55px;
 `;
 
-const TextSC = styled.h6``;
+const TextSC = styled.h6`
+  user-select: none;
+`;
 
 const SpanSC = styled.span`
   color: #f30085;
