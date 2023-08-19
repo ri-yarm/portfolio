@@ -13,10 +13,18 @@ const TextSC = styled.p`
   letter-spacing: -2.45px;
 
   text-transform: uppercase;
+
+  &::selection {
+    background-color: #f30085;
+  }
 `;
 
 const SpanSC = styled.span`
   color: #f30085;
+
+  &::selection {
+    background-color: #fff;
+  }
 `;
 
 export const useMarqueeStyles = () => ({

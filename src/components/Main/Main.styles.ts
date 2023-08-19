@@ -30,7 +30,7 @@ const TitleSC = styled.h5`
   font-weight: 600;
 
   &::selection {
-    background-color: #ff0000;
+    background-color: #f30085;
   }
 `;
 
@@ -39,7 +39,7 @@ const SubtitleSC = styled.h6`
   font-size: 30px;
 
   &::selection {
-    background-color: #ff0000;
+    background-color: #f30085;
   }
 `;
 
@@ -47,7 +47,7 @@ const FrontendTextSC = styled.span`
   color: #f30085;
 
   &::selection {
-    background-color: #fff;
+    background-color: yellow;
   }
 
   &::before {

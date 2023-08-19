@@ -18,7 +18,9 @@ const ContainerSC = styled.div`
   font-size: 55px;
 `;
 
-const TextSC = styled.h6``;
+const TextSC = styled.h6`
+  user-select: none;
+`;
 
 const SpanSC = styled.span`
   color: #f30085;
