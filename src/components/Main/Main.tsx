@@ -1,24 +1,15 @@
 import React from "react";
 
 import { useMainStyles } from "./Main.styles";
-import { mainText } from "../../lib/mock/mainText";
-import Trail from "./Trail/Trail";
 import FlippedElement from "../FlippedElement/FlippedElement";
+import InfoText from "../InfoText/InfoText";
 
 const Main = () => {
   return (
     <MainSC>
       <WrapperSC>
         <ContainerSC>
-          <Trail open={true}>
-            <TitleSC>
-              {mainText.hello} <SpanSC>{mainText.name}</SpanSC>
-            </TitleSC>
-            <SubtitleSC>
-              Я <FrontendTextSC>{mainText.work}</FrontendTextSC> Разработчик
-            </SubtitleSC>
-            <DescriptionSC>{mainText.description}</DescriptionSC>
-          </Trail>
+          <InfoText />
         </ContainerSC>
         <FlippedElement />
       </WrapperSC>
@@ -26,15 +17,6 @@ const Main = () => {
   );
 };
 
-const {
-  MainSC,
-  DescriptionSC,
-  WrapperSC,
-  FrontendTextSC,
-  ContainerSC,
-  SpanSC,
-  TitleSC,
-  SubtitleSC,
-} = useMainStyles();
+const { MainSC, WrapperSC, ContainerSC } = useMainStyles();
 
 export default React.memo(Main);
