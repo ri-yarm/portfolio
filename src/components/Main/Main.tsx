@@ -3,7 +3,7 @@ import React from "react";
 import { useMainStyles } from "./Main.styles";
 import { mainText } from "../../lib/mock/mainText";
 import Trail from "./Trail/Trail";
-import AnimatedImage from "../AnimatedImaged/AnimatedImage";
+import FlippedElement from "../FlippedElement/FlippedElement";
 
 const Main = () => {
   return (
@@ -20,7 +20,7 @@ const Main = () => {
             <DescriptionSC>{mainText.description}</DescriptionSC>
           </Trail>
         </ContainerSC>
-        <AnimatedImage />
+        <FlippedElement />
       </WrapperSC>
     </MainSC>
   );

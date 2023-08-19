@@ -37,8 +37,10 @@ const AnimatedImage = () => {
 };
 
 const ImageSC = styled(animated.div)`
-  width: 330px;
-  height: 400px;
+  width: 100%;
+  height: 100%;
+  //width: 330px;
+  //height: 400px;
   border-radius: 72px 0px 56px 15px;
   background-image: url("images/myPhoto.jpg");
   background-position: center center;
@@ -47,6 +49,10 @@ const ImageSC = styled(animated.div)`
 
   position: relative;
   z-index: ${ZIndex.DEFAULT};
+
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+  position: absolute;
 `;
 
 const CoolGlassesSC = styled.img<{ isHovered: boolean }>`
