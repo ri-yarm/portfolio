@@ -13,7 +13,7 @@ const Trail = ({ open, children }: TrailProps) => {
     config: { mass: 5, tension: 2000, friction: 300 },
     opacity: open ? 1 : 0,
     x: open ? 0 : 20,
-    height: open ? 70 : 0,
+    height: open ? "auto" : 0,
     from: { opacity: 0, x: 20, height: 0 },
   });
 

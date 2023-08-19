@@ -19,7 +19,11 @@ const WrapperSC = styled.div`
   flex-grow: 1;
 `;
 
-const ContainerSC = styled.div``;
+const ContainerSC = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
 
 const TitleSC = styled.h5`
   font-size: 37px;
@@ -32,17 +36,15 @@ const SubtitleSC = styled.h6`
 `;
 
 const FrontendTextSC = styled.span`
-  //background: #f30085;
-  //background-image: linear-gradient(to right, #ec13ff, #14d5ef);
-  //-webkit-text-fill-color: transparent;
-  //-webkit-background-clip: text;
-  //-webkit-box-decoration-break: clone;
+  color: #f30085;
 
   &::before {
+    color: blueviolet;
     font-family: "Arial", serif;
     content: "{ ";
   }
   &::after {
+    color: yellow;
     font-family: "Arial", serif;
     content: " }";
   }

@@ -6,7 +6,7 @@ const HeaderSC = styled.header`
 
   width: 100%;
 
-  padding: 28px;
+  padding: 14px 28px;
 
   display: flex;
   flex-direction: column;
