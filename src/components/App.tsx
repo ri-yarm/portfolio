@@ -2,6 +2,7 @@ import Main from "./Main/Main";
 import Header from "./Header/Header";
 import MarqueeUI from "./Marquee/Marquee";
 import ConsoleView from "./ConsoleView/ConsoleView";
+import NyanCat from "./NyanCatAlive/NyanCat";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Header />
       <MarqueeUI />
       <Main />
+      <NyanCat />
     </>
   );
 }
