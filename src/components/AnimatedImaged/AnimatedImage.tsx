@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { animated, useSpring } from "@react-spring/web";
+import { useSpring } from "@react-spring/web";
 import coolGlasses from "../../assets/coolGlasses.png";
+import { useAnimatedImageStyles } from "./animatedImage.styles";
 import squidWard from "../../assets/squidwardGifMeme.gif";
-import styled from "styled-components";
-import { ZIndex } from "../../lib/contants/enums/ZIndex";
+import stich from "../../assets/steach.gif";
 
 const AnimatedImage = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -30,61 +30,22 @@ const AnimatedImage = () => {
         willChange: "transform",
         ...scaleAnimation,
       }}>
-      <CoolGlassesSC isHovered={isHovered} src={coolGlasses} />
-      <SquidWardSC isHovered={isHovered} src={squidWard} />
+      <CoolGlassesSC
+        isHovered={isHovered}
+        src={coolGlasses}
+        alt={" mlg glasses."}
+      />
+      <SquidWardSC
+        isHovered={isHovered}
+        src={squidWard}
+        alt={" squidward dancing."}
+      />
+      <StichSC isHovered={isHovered} src={stich} alt={" stich dancing."} />
     </ImageSC>
   );
 };
 
-const ImageSC = styled(animated.div)`
-  width: 100%;
-  height: 100%;
-  //width: 330px;
-  //height: 400px;
-  border-radius: 72px 0px 56px 15px;
-  background-image: url("images/myPhoto.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  position: relative;
-  z-index: ${ZIndex.DEFAULT};
-
-  transform: rotateY(0deg);
-  backface-visibility: hidden;
-  position: absolute;
-`;
-
-const CoolGlassesSC = styled.img<{ isHovered: boolean }>`
-  width: 80px;
-  height: 50px;
-
-  left: 50%;
-  transform: translate(-50%) scaleX(-1);
-
-  top: ${({ isHovered }) => (isHovered ? "35px" : "-50px")};
-  opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
-
-  position: absolute;
-  z-index: ${ZIndex.ELEMENT};
-
-  transition: all 0.5s ease;
-
-  user-select: none;
-`;
-
-const SquidWardSC = styled.img<{ isHovered: boolean }>`
-  width: 100px;
-
-  bottom: ${({ isHovered }) => (isHovered ? "0px" : "-500px")};
-  opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
-
-  position: absolute;
-  z-index: ${ZIndex.ELEMENT};
-
-  transition: all 0.5s ease;
-
-  user-select: none;
-`;
+const { ImageSC, StichSC, SquidWardSC, CoolGlassesSC } =
+  useAnimatedImageStyles();
 
 export default React.memo(AnimatedImage);

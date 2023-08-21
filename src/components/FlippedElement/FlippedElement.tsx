@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import AnimatedImage from "../AnimatedImaged/AnimatedImage";
 import CodeHighLight from "../CodeHighlight/CodeHighLight";
+import AnimatedImage from "../AnimatedImaged/AnimatedImage";
 
 const FlippedElement = () => {
   const [isFlipped, setIsFlipped] = useState(false);
