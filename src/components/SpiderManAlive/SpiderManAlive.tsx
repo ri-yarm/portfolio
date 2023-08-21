@@ -18,7 +18,7 @@ const SpiderManAlive = () => {
   );
 
   return (
-    <div>
+    <>
       {trails.map((props, index) => (
         <SpiderManSC
           key={index}
@@ -27,7 +27,7 @@ const SpiderManAlive = () => {
           alt="Spider-Man"
         />
       ))}
-    </div>
+    </>
   );
 };
 

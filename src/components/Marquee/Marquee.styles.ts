@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 const ContainerSC = styled.div`
   background: #000;
+
+  position: relative;
 `;
 
 const TextSC = styled.p`
