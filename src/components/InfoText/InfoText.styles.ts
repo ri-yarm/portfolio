@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import { Colors } from "../../lib/contants/enums/Colors";
 
 const TitleSC = styled.h5`
   font-size: 37px;
   font-weight: 600;
 
   &::selection {
-    background-color: #f30085;
+    background-color: ${Colors.MAIN};
   }
 `;
 
@@ -14,26 +15,15 @@ const SubtitleSC = styled.h6`
   font-size: 30px;
 
   &::selection {
-    background-color: #f30085;
+    background-color: ${Colors.MAIN};
   }
 `;
 
 const FrontendTextSC = styled.span`
-  color: #f30085;
+  color: ${Colors.MAIN};
 
   &::selection {
-    background-color: yellow;
-  }
-
-  &::before {
-    color: blueviolet;
-    font-family: "Arial", serif;
-    content: "{ ";
-  }
-  &::after {
-    color: yellow;
-    font-family: "Arial", serif;
-    content: " }";
+    background-color: ${Colors.YELLOW};
   }
 `;
 
@@ -43,17 +33,20 @@ const DescriptionSC = styled.p`
   max-width: 800px;
 
   &::selection {
-    background-color: #f30085;
+    background-color: ${Colors.MAIN};
   }
 `;
 
-const SpanSC = styled.span`
-  color: #f30085;
+const SpanSC = styled.h1`
+  color: ${Colors.MAIN};
   font-size: 50px;
   font-weight: 500;
 
+  display: inline;
+  margin: 0;
+
   &::selection {
-    background-color: yellow;
+    background-color: ${Colors.YELLOW};
   }
 `;
 
