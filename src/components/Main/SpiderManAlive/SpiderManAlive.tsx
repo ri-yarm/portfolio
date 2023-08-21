@@ -11,8 +11,8 @@ const SpiderManAlive = () => {
       from: { bottom: "-40%" },
       to: { bottom: "100%" },
       loop: true,
-      delay: 15000,
-      config: { duration: 10000 },
+      delay: 40000,
+      config: { duration: 20000 },
     }),
     [],
   );
