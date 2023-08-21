@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import spiderGif from "../../assets/chelPauk.gif";
-import { ZIndex } from "../../lib/contants/enums/ZIndex";
+import spiderGif from "../../../assets/chelPauk.gif";
+import { ZIndex } from "../../../lib/contants/enums/ZIndex";
 import { animated, useTrail } from "@react-spring/web";
 
 const SpiderManAlive = () => {
@@ -11,7 +11,7 @@ const SpiderManAlive = () => {
       from: { bottom: "-40%" },
       to: { bottom: "100%" },
       loop: true,
-      delay: 8000,
+      delay: 15000,
       config: { duration: 10000 },
     }),
     [],

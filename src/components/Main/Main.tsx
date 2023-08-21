@@ -3,6 +3,7 @@ import React from "react";
 import { useMainStyles } from "./Main.styles";
 import FlippedElement from "../FlippedElement/FlippedElement";
 import InfoText from "../InfoText/InfoText";
+import SpiderManAlive from "./SpiderManAlive/SpiderManAlive";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
         </ContainerSC>
         <FlippedElement />
       </WrapperSC>
+      <SpiderManAlive />
     </MainSC>
   );
 };
