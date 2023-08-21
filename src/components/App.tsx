@@ -2,6 +2,7 @@ import Main from "./Main/Main";
 import Header from "./Header/Header";
 import Marquee from "./Marquee/Marquee";
 import ConsoleView from "./ConsoleView/ConsoleView";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Marquee />
       <Main />
+      <Footer />
       <ConsoleView />
     </>
   );
