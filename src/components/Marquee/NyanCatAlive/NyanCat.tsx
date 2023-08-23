@@ -9,10 +9,10 @@ const NyanCat = () => {
   const [trails] = useTrail(
     1,
     () => ({
-      from: { left: "0%" },
+      from: { left: "-40%" },
       to: { left: "100%" },
       loop: true,
-      // delay: 8000,
+      delay: 8000,
       config: { duration: 35000 },
     }),
     [],

@@ -20,8 +20,13 @@ const ImageSC = styled(animated.div)`
 
   overflow: hidden;
 
+  transition: all 0.5s ease;
+
   @media (max-width: ${BreakPoints.TABLET}px) {
     border-radius: 50%;
+
+    background-size: 130%;
+    background-position: top center;
   }
 `;
 
@@ -41,6 +46,12 @@ const CoolGlassesSC = styled.img<{ isHovered: boolean }>`
   transition: all 0.5s ease;
 
   user-select: none;
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    width: 50px;
+    height: 30px;
+    top: ${({ isHovered }) => (isHovered ? "28px" : "-50px")};
+  }
 `;
 
 const SquidWardSC = styled.img<{ isHovered: boolean }>`
@@ -55,6 +66,10 @@ const SquidWardSC = styled.img<{ isHovered: boolean }>`
   transition: all 0.5s ease;
 
   user-select: none;
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    display: none;
+  }
 `;
 
 const StichSC = styled.img<{ isHovered: boolean }>`
@@ -70,6 +85,12 @@ const StichSC = styled.img<{ isHovered: boolean }>`
   transition: all 0.5s ease;
 
   user-select: none;
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    width: 80px;
+    right: ${({ isHovered }) => (isHovered ? "50%" : "-500px")};
+    transform: translate(50%);
+  }
 `;
 
 export const useAnimatedImageStyles = () => ({
