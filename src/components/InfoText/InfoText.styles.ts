@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Colors } from "../../lib/contants/enums/Colors";
+import { BreakPoints } from "../../lib/contants/enums/BreakPoints";
 
 const TitleSC = styled.h5`
   font-size: 28px;
@@ -7,6 +8,10 @@ const TitleSC = styled.h5`
 
   &::selection {
     background-color: ${Colors.MAIN};
+  }
+
+  @media (max-width: ${BreakPoints.BIG_TABLET}px) {
+    font-size: 25px;
   }
 `;
 
@@ -16,6 +21,10 @@ const SubtitleSC = styled.h6`
 
   &::selection {
     background-color: ${Colors.MAIN};
+  }
+
+  @media (max-width: ${BreakPoints.BIG_TABLET}px) {
+    font-size: 21px;
   }
 `;
 
@@ -35,6 +44,10 @@ const DescriptionSC = styled.p`
   &::selection {
     background-color: ${Colors.MAIN};
   }
+
+  @media (max-width: ${BreakPoints.BIG_TABLET}px) {
+    font-size: 16px;
+  }
 `;
 
 const SpanSC = styled.h1`
@@ -47,6 +60,14 @@ const SpanSC = styled.h1`
 
   &::selection {
     background-color: ${Colors.YELLOW};
+  }
+
+  @media (max-width: ${BreakPoints.BIG_TABLET}px) {
+    font-size: 30px;
+  }
+
+  @media (max-width: ${BreakPoints.TITLE_VERSE}px) {
+    display: block;
   }
 `;
 

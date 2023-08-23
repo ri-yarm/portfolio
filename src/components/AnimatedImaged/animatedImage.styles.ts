@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { animated } from "@react-spring/web";
 import { ZIndex } from "../../lib/contants/enums/ZIndex";
+import { BreakPoints } from "../../lib/contants/enums/BreakPoints";
 
 const ImageSC = styled(animated.div)`
   width: 100%;
@@ -18,6 +19,10 @@ const ImageSC = styled(animated.div)`
   position: absolute;
 
   overflow: hidden;
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    border-radius: 50%;
+  }
 `;
 
 const CoolGlassesSC = styled.img<{ isHovered: boolean }>`

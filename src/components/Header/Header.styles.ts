@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BreakPoints } from "../../lib/contants/enums/BreakPoints";
 
 const HeaderSC = styled.header`
   background: #000;
@@ -17,6 +18,12 @@ const HeaderSC = styled.header`
 const ContainerSC = styled.div`
   color: #fff;
   font-size: 55px;
+
+  transition: all 0.5s ease;
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    font-size: 50px;
+  }
 `;
 
 const TextSC = styled.h6`

@@ -1,6 +1,6 @@
 import React from "react";
 import { useHeaderStyles } from "./Header.styles";
-import SocietyBar from "../SocietyBar/SocietyBar";
+import SocietyBar from "./SocietyBar/SocietyBar";
 
 const Header = () => {
   return (

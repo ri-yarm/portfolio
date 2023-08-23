@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import CodeHighLight from "../CodeHighlight/CodeHighLight";
 import AnimatedImage from "../AnimatedImaged/AnimatedImage";
+import { BreakPoints } from "../../lib/contants/enums/BreakPoints";
 
 const FlippedElement = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -27,6 +28,11 @@ const ContainerSC = styled.article`
 
   width: 330px;
   height: 400px;
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    width: 220px;
+    height: 220px;
+  }
 `;
 
 const WrapperSC = styled.div<{ isFlipped: boolean }>`
@@ -36,11 +42,10 @@ const WrapperSC = styled.div<{ isFlipped: boolean }>`
   transition: transform 0.5s;
 
   transform: ${({ isFlipped }) => (isFlipped ? "rotateY(180deg)" : "none")};
-`;
 
-// const OutterSC = styled.div`
-//   width: 360px;
-//   height: 450px;
-// `;
+  @media (max-width: ${BreakPoints.NOTEBOOK}px) {
+    transform: none;
+  }
+`;
 
 export default FlippedElement;
