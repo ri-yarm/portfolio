@@ -24,10 +24,12 @@ const FlippedElement = () => {
 const ContainerSC = styled.article`
   perspective: 1000px;
   cursor: pointer;
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
 
   width: 330px;
   height: 400px;
+
+  user-select: none;
 
   @media (max-width: ${BreakPoints.TABLET}px) {
     width: 220px;
@@ -38,8 +40,8 @@ const ContainerSC = styled.article`
 const WrapperSC = styled.div<{ isFlipped: boolean }>`
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
-  transition: transform 0.5s;
+  //transform-style: preserve-3d;
+  transition: transform 0.5s ease;
 
   transform: ${({ isFlipped }) => (isFlipped ? "rotateY(180deg)" : "none")};
 
