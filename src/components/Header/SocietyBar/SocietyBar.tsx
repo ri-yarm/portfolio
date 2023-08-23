@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as GitHubIcon } from "../../assets/GitHubIcon.svg";
-import { ReactComponent as TelegramIcon } from "../../assets/TelegramIcon.svg";
+import { ReactComponent as GitHubIcon } from "../../../assets/GitHubIcon.svg";
+import { ReactComponent as TelegramIcon } from "../../../assets/TelegramIcon.svg";
 import { useSocietyBarStyles } from "./SocietyBar.styles";
 
 const SocietyBar = () => (

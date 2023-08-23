@@ -1,6 +1,7 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
 import { useMarqueeStyles } from "./Marquee.styles";
+import NyanCat from "./NyanCatAlive/NyanCat";
 
 const MarqueeUI = () => {
   return (
@@ -12,6 +13,7 @@ const MarqueeUI = () => {
           &nbsp;
         </TextSC>
       </Marquee>
+      <NyanCat />
     </ContainerSC>
   );
 };

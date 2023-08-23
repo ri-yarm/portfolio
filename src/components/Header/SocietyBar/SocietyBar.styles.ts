@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { BreakPoints } from "../../../lib/contants/enums/BreakPoints";
 
 const IconsContainer = styled.ul`
   list-style-type: none;
@@ -8,6 +9,8 @@ const IconsContainer = styled.ul`
   align-self: center;
   flex-grow: 1;
   gap: 40px;
+
+  transition: all 0.4s ease;
 
   svg {
     width: 35px;
@@ -19,6 +22,20 @@ const IconsContainer = styled.ul`
     &:hover {
       opacity: 1;
     }
+
+    @media (max-width: ${BreakPoints.TABLET}px) {
+      width: 31px;
+      height: 31px;
+    }
+  }
+
+  @media (max-width: ${BreakPoints.TABLET}px) {
+    justify-content: end;
+    gap: 25px;
+  }
+
+  @media (max-width: ${BreakPoints.BIG_PHONE}px) {
+    gap: 15px;
   }
 `;
 

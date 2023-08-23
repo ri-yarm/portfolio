@@ -1,15 +1,17 @@
 import Main from "./Main/Main";
 import Header from "./Header/Header";
-import MarqueeUI from "./Marquee/Marquee";
+import Marquee from "./Marquee/Marquee";
 import ConsoleView from "./ConsoleView/ConsoleView";
+import Footer from "./Footer/Footer";
 
 function App() {
   return (
     <>
-      <ConsoleView />
       <Header />
-      <MarqueeUI />
+      <Marquee />
       <Main />
+      <Footer />
+      <ConsoleView />
     </>
   );
 }
