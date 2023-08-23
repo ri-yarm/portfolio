@@ -2,7 +2,7 @@ version: "3"
 services:
   app:
     image: portfolio
-    container_name: index_rework
+    container_name: portfolio
     stdin_open: true
     tty: true
     restart: always
