@@ -4,6 +4,8 @@ import Marquee from "./Marquee/Marquee";
 import ConsoleView from "./ConsoleView/ConsoleView";
 import Footer from "./Footer/Footer";
 
+import "normalize.css";
+
 function App() {
   return (
     <>

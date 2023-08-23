@@ -7,7 +7,7 @@ const ImageSC = styled(animated.div)`
   width: 100%;
   height: 100%;
   border-radius: 72px 0px 56px 15px;
-  background-image: url("images/myPhoto.jpg");
+  background-image: url("/images/myPhoto.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,7 +28,7 @@ const ImageSC = styled(animated.div)`
 
     position: relative;
 
-    border-radius: 50%;
+    //border-radius: 50%;
 
     background-size: 130%;
     background-position: top center;
