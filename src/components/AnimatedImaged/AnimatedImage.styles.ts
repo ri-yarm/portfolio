@@ -23,6 +23,11 @@ const ImageSC = styled(animated.div)`
   transition: all 0.5s ease;
 
   @media (max-width: ${BreakPoints.TABLET}px) {
+    width: 220px;
+    height: 220px;
+
+    position: relative;
+
     border-radius: 50%;
 
     background-size: 130%;

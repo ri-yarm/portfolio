@@ -3,21 +3,28 @@ import styled from "styled-components";
 import CodeHighLight from "../CodeHighlight/CodeHighLight";
 import AnimatedImage from "../AnimatedImaged/AnimatedImage";
 import { BreakPoints } from "../../lib/contants/enums/BreakPoints";
+import { useTablet } from "../../hooks/useBreakPoints";
 
 const FlippedElement = () => {
   const [isFlipped, setIsFlipped] = useState(false);
+  const isMobile = useTablet();
 
   const handleCardClick = () => {
     setIsFlipped(!isFlipped);
   };
 
   return (
-    <ContainerSC onClick={handleCardClick}>
-      <WrapperSC isFlipped={isFlipped}>
-        <AnimatedImage />
-        <CodeHighLight />
-      </WrapperSC>
-    </ContainerSC>
+    <>
+      {!isMobile && (
+        <ContainerSC onClick={handleCardClick}>
+          <WrapperSC isFlipped={isFlipped}>
+            <AnimatedImage />
+            <CodeHighLight />
+          </WrapperSC>
+        </ContainerSC>
+      )}
+      {isMobile && <AnimatedImage />}
+    </>
   );
 };
 
