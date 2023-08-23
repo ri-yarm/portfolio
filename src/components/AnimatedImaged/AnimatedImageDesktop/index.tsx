@@ -1,27 +1,20 @@
-import React, { useEffect, useState } from "react";
-import { useSpring } from "@react-spring/web";
+import React from "react";
 import coolGlasses from "../../../assets/coolGlasses.png";
 import { useAnimatedImageStyles } from "../AnimatedImage.styles";
 import squidWard from "../../../assets/squidwardGifMeme.gif";
 import stich from "../../../assets/steach.gif";
 
-const AnimatedImageDesktop = () => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [startAnimation, setStartAnimation] = useState(false);
+interface AnimatedImageDesktopProps {
+  setIsHovered: (arg: boolean) => void;
+  isHovered: boolean;
+  scaleAnimation: any;
+}
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      setStartAnimation(true);
-    }, 100);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
-  const scaleAnimation = useSpring({
-    transform: startAnimation ? "scale(1)" : "scale(1.1)",
-    config: { tension: 120, friction: 20 },
-  });
-
+const AnimatedImageDesktop = ({
+  setIsHovered,
+  isHovered,
+  scaleAnimation,
+}: AnimatedImageDesktopProps) => {
   return (
     <ImageSC
       onMouseEnter={() => setIsHovered(true)}

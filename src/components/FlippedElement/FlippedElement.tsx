@@ -7,24 +7,18 @@ import { useTablet } from "../../hooks/useBreakPoints";
 
 const FlippedElement = () => {
   const [isFlipped, setIsFlipped] = useState(false);
-  const isMobile = useTablet();
 
   const handleCardClick = () => {
     setIsFlipped(!isFlipped);
   };
 
   return (
-    <>
-      {!isMobile && (
-        <ContainerSC onClick={handleCardClick}>
-          <WrapperSC isFlipped={isFlipped}>
-            <AnimatedImage />
-            <CodeHighLight />
-          </WrapperSC>
-        </ContainerSC>
-      )}
-      {isMobile && <AnimatedImage />}
-    </>
+    <ContainerSC onClick={handleCardClick}>
+      <WrapperSC isFlipped={isFlipped}>
+        <AnimatedImage />
+        <CodeHighLight />
+      </WrapperSC>
+    </ContainerSC>
   );
 };
 
@@ -47,7 +41,7 @@ const ContainerSC = styled.article`
 const WrapperSC = styled.div<{ isFlipped: boolean }>`
   width: 100%;
   height: 100%;
-  //transform-style: preserve-3d;
+  transform-style: preserve-3d;
   transition: transform 0.5s ease;
 
   transform: ${({ isFlipped }) => (isFlipped ? "rotateY(180deg)" : "none")};
