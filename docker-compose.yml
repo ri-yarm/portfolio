@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    image: portfolio
+    container_name: index_rework
+    stdin_open: true
+    tty: true
+    restart: always
+    ports:
+      - "5913:3000"
