@@ -37,4 +37,9 @@ const WrapperSC = styled.div<{ isFlipped: boolean }>`
 
   transform: ${({ isFlipped }) => (isFlipped ? "rotateY(180deg)" : "none")};
 `;
+
+const OutterSC = styled.div`
+  width: 360px;
+  height: 450px;
+`;
 export default FlippedElement;

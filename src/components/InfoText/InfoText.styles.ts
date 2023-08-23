@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Colors } from "../../lib/contants/enums/Colors";
 
 const TitleSC = styled.h5`
-  font-size: 37px;
-  font-weight: 600;
+  font-size: 28px;
+  font-weight: 500;
 
   &::selection {
     background-color: ${Colors.MAIN};
@@ -12,7 +12,7 @@ const TitleSC = styled.h5`
 
 const SubtitleSC = styled.h6`
   font-weight: 500;
-  font-size: 30px;
+  font-size: 25px;
 
   &::selection {
     background-color: ${Colors.MAIN};
@@ -28,7 +28,7 @@ const FrontendTextSC = styled.span`
 `;
 
 const DescriptionSC = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   max-width: 800px;
 
@@ -39,7 +39,7 @@ const DescriptionSC = styled.p`
 
 const SpanSC = styled.h1`
   color: ${Colors.MAIN};
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
 
   display: inline;
