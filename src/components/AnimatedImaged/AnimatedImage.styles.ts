@@ -48,7 +48,7 @@ const CoolGlassesSC = styled.img<{ isHovered: boolean }>`
   position: absolute;
   z-index: ${ZIndex.ELEMENT};
 
-  transition: all 0.5s ease;
+  transition: all 2s ease;
 
   user-select: none;
 
@@ -93,7 +93,8 @@ const StichSC = styled.img<{ isHovered: boolean }>`
 
   @media (max-width: ${BreakPoints.TABLET}px) {
     width: 80px;
-    right: ${({ isHovered }) => (isHovered ? "50%" : "-500px")};
+    right: 50%;
+    opacity: ${({ isHovered }) => (isHovered ? 1 : 0)};
     transform: translate(50%);
   }
 `;
