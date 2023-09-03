@@ -1,21 +1,9 @@
-import Main from "./Main/Main";
-import Header from "./Header/Header";
-import Marquee from "./Marquee/Marquee";
-import ConsoleView from "./ConsoleView/ConsoleView";
-import Footer from "./Footer/Footer";
-
 import "normalize.css";
+import React from "react";
+import MainLayout from "../layouts/mainLayout";
 
 function App() {
-  return (
-    <>
-      <Header />
-      <Marquee />
-      <Main />
-      <Footer />
-      <ConsoleView />
-    </>
-  );
+  return <MainLayout />;
 }
 
 export default App;
