@@ -29,6 +29,8 @@ const AnimatedImage = () => {
         <AnimatedImageDesktop
           isHovered={isHovered}
           setIsHovered={setIsHovered}
+          /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+          // @ts-ignore
           scaleAnimation={scaleAnimation}
         />
       )}
@@ -36,6 +38,8 @@ const AnimatedImage = () => {
         <AnimatedImageMobile
           isClicked={isHovered}
           setIsHovered={setIsHovered}
+          /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
+          // @ts-ignore
           scaleAnimation={scaleAnimation}
         />
       )}

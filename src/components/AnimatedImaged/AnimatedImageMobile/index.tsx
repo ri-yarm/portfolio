@@ -5,7 +5,7 @@ import stich from "../../../assets/steach.gif";
 
 interface AnimatedImageMobileProps {
   isClicked: boolean;
-  scaleAnimation: any;
+  scaleAnimation: never;
   setIsHovered: (arg: boolean) => void;
 }
 
@@ -18,6 +18,8 @@ const AnimatedImageMobile = ({
     onClick={() => setIsHovered(!isClicked)}
     style={{
       willChange: "transform",
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
       ...scaleAnimation,
     }}>
     <CoolGlassesSC

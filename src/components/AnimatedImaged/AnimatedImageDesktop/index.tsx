@@ -7,7 +7,7 @@ import stich from "../../../assets/steach.gif";
 interface AnimatedImageDesktopProps {
   setIsHovered: (arg: boolean) => void;
   isHovered: boolean;
-  scaleAnimation: any;
+  scaleAnimation: never;
 }
 
 const AnimatedImageDesktop = ({
@@ -21,6 +21,8 @@ const AnimatedImageDesktop = ({
       onMouseLeave={() => setIsHovered(false)}
       style={{
         willChange: "transform",
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
         ...scaleAnimation,
       }}>
       <CoolGlassesSC
