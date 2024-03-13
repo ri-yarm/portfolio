@@ -9,7 +9,7 @@ const InfoText = () => (
       {mainText.hello} <SpanSC>{mainText.name}</SpanSC>
     </TitleSC>
     <SubtitleSC>
-      Я <FrontendTextSC>{mainText.work}</FrontendTextSC> разработчик
+      Я <FrontendTextSC>{mainText.work}</FrontendTextSC>-разработчик
     </SubtitleSC>
     <DescriptionSC>{mainText.description}</DescriptionSC>
   </Trail>
