@@ -11,7 +11,7 @@ const SocietyBar = () => (
       </a>{" "}
     </li>
     <li>
-      <a href={"https://t.me/ri_yarm"} target="_blank" rel="noreferrer">
+      <a href={"https://t.me/rinath52"} target="_blank" rel="noreferrer">
         <TelegramIcon />
       </a>{" "}
     </li>

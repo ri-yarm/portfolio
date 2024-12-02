@@ -8,7 +8,7 @@ const MarqueeUI = () => {
     <ContainerSC>
       <Marquee autoFill={true} speed={100} style={{ overflow: "hidden" }}>
         <TextSC>
-          Frontend-разработка&nbsp;<SpanSC>Frontend-разработка</SpanSC>&nbsp;
+          Frontend Developer&nbsp;<SpanSC>Frontend Developer</SpanSC>&nbsp;
         </TextSC>
       </Marquee>
       <NyanCat />

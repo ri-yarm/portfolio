@@ -5,6 +5,7 @@ import { BreakPoints } from "../../lib/contants/enums/BreakPoints";
 const TitleSC = styled.h5`
   font-size: 28px;
   font-weight: 500;
+  margin-bottom: 16px;
 
   &::selection {
     background-color: ${Colors.MAIN};
@@ -18,6 +19,7 @@ const TitleSC = styled.h5`
 const SubtitleSC = styled.h6`
   font-weight: 500;
   font-size: 25px;
+  margin-bottom: 8px;
 
   &::selection {
     background-color: ${Colors.MAIN};

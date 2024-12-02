@@ -4,15 +4,15 @@ export const codeText =
   "    super(props);\n" +
   "    this.state = {\n" +
   '      name: "Ринат Ярмухаметов",\n' +
-  "      age: 23\n" +
+  "      age: 24\n" +
   "    };\n" +
   "  }\n" +
   "\n" +
   "  render() {\n" +
   "    return (\n" +
-  "      <ContainerSC>\n" +
-  "        <p>Hello, World</p>\n" +
-  "      </ContainerSC>\n" +
+  "      <main>\n" +
+  "        <p>Ринат</p>\n" +
+  "      </main>\n" +
   "    );\n" +
   "  }\n" +
   "}\n" +

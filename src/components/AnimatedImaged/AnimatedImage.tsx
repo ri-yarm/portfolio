@@ -6,23 +6,34 @@ import { useSpring } from "@react-spring/web";
 
 const AnimatedImage = () => {
   const isMobile = useTablet();
-
   const [isHovered, setIsHovered] = useState(false);
-  const [startAnimation, setStartAnimation] = useState(false);
+  const [scaleState, setScaleState] = useState("initial"); // "initial", "scaling", "normal"
 
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setStartAnimation(true);
-    }, 100);
+    const initialTimeout = setTimeout(() => {
+      setScaleState("normal");
+    }, 5000);
 
-    return () => clearTimeout(timeout);
+    const interval = setInterval(() => {
+      setScaleState("scaling");
+      setTimeout(() => setScaleState("normal"), 300);
+    }, 5000);
+
+    return () => {
+      clearTimeout(initialTimeout);
+      clearInterval(interval);
+    };
   }, []);
 
   const scaleAnimation = useSpring({
-    transform: startAnimation ? "scale(1)" : "scale(1.1)",
+    transform:
+      scaleState === "initial"
+        ? "scale(1.1)"
+        : scaleState === "scaling"
+        ? "scale(1.2)"
+        : "scale(1)",
     config: { tension: 120, friction: 20 },
   });
-
   return (
     <>
       {!isMobile && (

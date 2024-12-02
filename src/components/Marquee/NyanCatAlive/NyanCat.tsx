@@ -12,7 +12,7 @@ const NyanCat = () => {
       from: { left: "-40%" },
       to: { left: "100%" },
       loop: true,
-      delay: 18000,
+      delay: 0,
       config: { duration: 35000 },
     }),
     [],
