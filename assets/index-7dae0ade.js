@@ -91,15 +91,15 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
     super(props);
     this.state = {
       name: "Ринат Ярмухаметов",
-      age: 23
+      age: 24
     };
   }
 
   render() {
     return (
-      <ContainerSC>
-        <p>Hello, World</p>
-      </ContainerSC>
+      <main>
+        <p>Ринат</p>
+      </main>
     );
   }
 }
@@ -196,7 +196,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
     opacity: ${({isHovered:e})=>e?1:0};
     transform: translate(50%);
   }
-`,sI=()=>({ImageSC:H2,CoolGlassesSC:j2,SquidWardSC:V2,StichSC:W2}),Y2="/portfolio/assets/squidwardGifMeme-d91e06bd.gif",lI="/portfolio/assets/steach-1deca036.gif",K2=({setIsHovered:e,isHovered:t,scaleAnimation:n})=>M.jsxs(X2,{onMouseEnter:()=>e(!0),onMouseLeave:()=>e(!1),style:{willChange:"transform",...n},children:[M.jsx(J2,{isHovered:t,src:RR,alt:" mlg glasses."}),M.jsx(Q2,{isHovered:t,src:Y2,alt:" squidward dancing."}),M.jsx(Z2,{isHovered:t,src:lI,alt:" stich dancing."})]}),{ImageSC:X2,StichSC:Z2,SquidWardSC:Q2,CoolGlassesSC:J2}=sI(),eB=fe.memo(K2),tB=({isClicked:e,scaleAnimation:t,setIsHovered:n})=>M.jsxs(nB,{onClick:()=>n(!e),style:{willChange:"transform",...t},children:[M.jsx(aB,{isHovered:e,src:RR,alt:" mlg glasses."}),M.jsx(rB,{isHovered:e,src:lI,alt:" stich dancing."})]}),{ImageSC:nB,StichSC:rB,CoolGlassesSC:aB}=sI(),iB=fe.memo(tB),oB=()=>{const e=AU(),[t,n]=B.useState(!1),[r,a]=B.useState(!1);B.useEffect(()=>{const o=setTimeout(()=>{a(!0)},100);return()=>clearTimeout(o)},[]);const i=C2({transform:r?"scale(1)":"scale(1.1)",config:{tension:120,friction:20}});return M.jsxs(M.Fragment,{children:[!e&&M.jsx(eB,{isHovered:t,setIsHovered:n,scaleAnimation:i}),e&&M.jsx(iB,{isClicked:t,setIsHovered:n,scaleAnimation:i})]})},sB=fe.memo(oB),lB=te.article`
+`,sI=()=>({ImageSC:H2,CoolGlassesSC:j2,SquidWardSC:V2,StichSC:W2}),Y2="/portfolio/assets/squidwardGifMeme-d91e06bd.gif",lI="/portfolio/assets/steach-1deca036.gif",K2=({setIsHovered:e,isHovered:t,scaleAnimation:n})=>M.jsxs(X2,{onMouseEnter:()=>e(!0),onMouseLeave:()=>e(!1),style:{willChange:"transform",...n},children:[M.jsx(J2,{isHovered:t,src:RR,alt:" mlg glasses."}),M.jsx(Q2,{isHovered:t,src:Y2,alt:" squidward dancing."}),M.jsx(Z2,{isHovered:t,src:lI,alt:" stich dancing."})]}),{ImageSC:X2,StichSC:Z2,SquidWardSC:Q2,CoolGlassesSC:J2}=sI(),eB=fe.memo(K2),tB=({isClicked:e,scaleAnimation:t,setIsHovered:n})=>M.jsxs(nB,{onClick:()=>n(!e),style:{willChange:"transform",...t},children:[M.jsx(aB,{isHovered:e,src:RR,alt:" mlg glasses."}),M.jsx(rB,{isHovered:e,src:lI,alt:" stich dancing."})]}),{ImageSC:nB,StichSC:rB,CoolGlassesSC:aB}=sI(),iB=fe.memo(tB),oB=()=>{const e=AU(),[t,n]=B.useState(!1),[r,a]=B.useState("initial");B.useEffect(()=>{const o=setTimeout(()=>{a("normal")},5e3),s=setInterval(()=>{a("scaling"),setTimeout(()=>a("normal"),300)},5e3);return()=>{clearTimeout(o),clearInterval(s)}},[]);const i=C2({transform:r==="initial"?"scale(1.1)":r==="scaling"?"scale(1.2)":"scale(1)",config:{tension:120,friction:20}});return M.jsxs(M.Fragment,{children:[!e&&M.jsx(eB,{isHovered:t,setIsHovered:n,scaleAnimation:i}),e&&M.jsx(iB,{isClicked:t,setIsHovered:n,scaleAnimation:i})]})},sB=fe.memo(oB),lB=te.article`
   perspective: 1000px;
   cursor: pointer;
   transition: transform 0.5s ease;
@@ -221,9 +221,10 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
   @media (max-width: ${ce.NOTEBOOK}px) {
     transform: none;
   }
-`,cB=()=>({ContainerSC:lB,WrapperSC:uB}),dB=()=>{const[e,t]=B.useState(!1),n=()=>{t(!e)};return M.jsx(fB,{onClick:n,children:M.jsxs(pB,{isFlipped:e,children:[M.jsx(sB,{}),M.jsx(EU,{})]})})},{WrapperSC:pB,ContainerSC:fB}=cB(),Ni={hello:"Привет, меня зовут",name:"Ринат Ярмухаметов",work:"Frontend",description:"Front-end разработчик с опытом работы более 3 лет. Опыт в создании интерфейсов и веб-приложений. Продемонстрировал навыки в Javascript, React(React-Native) и Redux за короткий период работы. Стремление к постоянному совершенствованию, ориентированность на результат и ответственное отношение к проектной деятельности."},gB=({open:e,children:t})=>{const n=fe.Children.toArray(t),r=Wm(n.length,{config:{mass:5,tension:2e3,friction:300},opacity:e?1:0,x:e?0:20,height:e?"auto":0,from:{opacity:0,x:20,height:0}});return M.jsx(M.Fragment,{children:r.map(({height:a,...i},o)=>M.jsx(Va.div,{style:i,children:M.jsx(Va.div,{style:{height:a},children:n[o]})},o))})},mB=fe.memo(gB);var bn=(e=>(e.BLACK="#000",e.WHITE="#fff",e.MAIN="#f30085",e.YELLOW="#ffff00ff",e))(bn||{});const hB=te.h5`
+`,cB=()=>({ContainerSC:lB,WrapperSC:uB}),dB=()=>{const[e,t]=B.useState(!1),n=()=>{t(!e)};return M.jsx(fB,{onClick:n,children:M.jsxs(pB,{isFlipped:e,children:[M.jsx(sB,{}),M.jsx(EU,{})]})})},{WrapperSC:pB,ContainerSC:fB}=cB(),Ni={hello:"Привет, меня зовут",name:"Ринат Ярмухаметов",work:"Frontend",description:"Front-end разработчик с опытом работы более 3 лет в создании интерфейсов и веб-приложений. Стремлюсь к постоянному совершенствованию, ориентирован на результат и всегда ответственно подхожу к проектам. Моя цель — создавать удобные, быстрые и эстетически приятные интерфейсы, которые решают задачи пользователей."},gB=({open:e,children:t})=>{const n=fe.Children.toArray(t),r=Wm(n.length,{config:{mass:5,tension:2e3,friction:300},opacity:e?1:0,x:e?0:20,height:e?"auto":0,from:{opacity:0,x:20,height:0}});return M.jsx(M.Fragment,{children:r.map(({height:a,...i},o)=>M.jsx(Va.div,{style:i,children:M.jsx(Va.div,{style:{height:a},children:n[o]})},o))})},mB=fe.memo(gB);var bn=(e=>(e.BLACK="#000",e.WHITE="#fff",e.MAIN="#f30085",e.YELLOW="#ffff00ff",e))(bn||{});const hB=te.h5`
   font-size: 28px;
   font-weight: 500;
+  margin-bottom: 16px;
 
   &::selection {
     background-color: ${bn.MAIN};
@@ -235,6 +236,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
 `,bB=te.h6`
   font-weight: 500;
   font-size: 25px;
+  margin-bottom: 8px;
 
   &::selection {
     background-color: ${bn.MAIN};
@@ -449,7 +451,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
   &::selection {
     background-color: #fff;
   }
-`,s$=()=>({ContainerSC:a$,SpanSC:o$,TextSC:i$}),l$="/portfolio/assets/nyanCatminify-97439837.gif",u$=()=>{const[e]=Wm(1,()=>({from:{left:"-40%"},to:{left:"100%"},loop:!0,delay:18e3,config:{duration:35e3}}),[]);return M.jsx(M.Fragment,{children:e.map((t,n)=>M.jsx(c$,{style:t,src:l$,alt:" nyan-cat."},n))})},c$=te(Va.img)`
+`,s$=()=>({ContainerSC:a$,SpanSC:o$,TextSC:i$}),l$="/portfolio/assets/nyanCatminify-97439837.gif",u$=()=>{const[e]=Wm(1,()=>({from:{left:"-40%"},to:{left:"100%"},loop:!0,delay:0,config:{duration:35e3}}),[]);return M.jsx(M.Fragment,{children:e.map((t,n)=>M.jsx(c$,{style:t,src:l$,alt:" nyan-cat."},n))})},c$=te(Va.img)`
   top: -50%;
   transform: translate(0, -10%);
   position: absolute;
@@ -463,7 +465,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
   @media (max-width: ${ce.BIG_PHONE}px) {
     height: 65px;
   }
-`,d$=fe.memo(u$),p$=()=>M.jsxs(f$,{children:[M.jsx(r$,{autoFill:!0,speed:100,style:{overflow:"hidden"},children:M.jsxs(m$,{children:["Frontend-разработка ",M.jsx(g$,{children:"Frontend-разработка"})," "]})}),M.jsx(d$,{})]}),{ContainerSC:f$,SpanSC:g$,TextSC:m$}=s$(),h$=fe.memo(p$),b$={text:`Очень приятно, что ты здесь находишься.
+`,d$=fe.memo(u$),p$=()=>M.jsxs(f$,{children:[M.jsx(r$,{autoFill:!0,speed:100,style:{overflow:"hidden"},children:M.jsxs(m$,{children:["Frontend Developer ",M.jsx(g$,{children:"Frontend Developer"})," "]})}),M.jsx(d$,{})]}),{ContainerSC:f$,SpanSC:g$,TextSC:m$}=s$(),h$=fe.memo(p$),b$={text:`Очень приятно, что ты здесь находишься.
 Если тебе интересна моя персона пиши мне на емейл: \x1B[33mthogusus@gmail.com\x1B[0m
 Или в телеграмм \x1B[34mhttps://t.me/ri_yarm\x1B[0m`},y$=()=>(B.useEffect(()=>{console.log(b$.text)},[]),M.jsx(M.Fragment,{})),E$=te.footer`
   width: 100%;
