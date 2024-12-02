@@ -348,7 +348,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
   @media (max-width: ${ce.BIG_PHONE}px) {
     gap: 15px;
   }
-`,jB=()=>({IconsContainer:HB}),VB=()=>M.jsxs(WB,{children:[M.jsxs("li",{children:[M.jsx("a",{href:"https://github.com/ri-yarm",target:"_blank",rel:"noreferrer",children:M.jsx(qB,{})})," "]}),M.jsxs("li",{children:[M.jsx("a",{href:"https://t.me/ri_yarm",target:"_blank",rel:"noreferrer",children:M.jsx(zB,{})})," "]})]}),{IconsContainer:WB}=jB(),YB=()=>M.jsxs(ZB,{children:[M.jsx(QB,{children:M.jsxs(XB,{children:["Р",M.jsx(KB,{children:"Я"})]})}),M.jsx(VB,{})]}),{SpanSC:KB,TextSC:XB,HeaderSC:ZB,ContainerSC:QB}=GB(),JB=fe.memo(YB);var uI={};function e$(e){if(!e||typeof window>"u")return;const t=document.createElement("style");return t.setAttribute("type","text/css"),t.innerHTML=e,document.head.appendChild(t),e}Object.defineProperty(uI,"__esModule",{value:!0});var he=B;function t$(e){return e&&typeof e=="object"&&"default"in e?e:{default:e}}var Kt=t$(he);e$(`.marquee-container {
+`,jB=()=>({IconsContainer:HB}),VB=()=>M.jsxs(WB,{children:[M.jsxs("li",{children:[M.jsx("a",{href:"https://github.com/ri-yarm",target:"_blank",rel:"noreferrer",children:M.jsx(qB,{})})," "]}),M.jsxs("li",{children:[M.jsx("a",{href:"https://t.me/rinath52",target:"_blank",rel:"noreferrer",children:M.jsx(zB,{})})," "]})]}),{IconsContainer:WB}=jB(),YB=()=>M.jsxs(ZB,{children:[M.jsx(QB,{children:M.jsxs(XB,{children:["Р",M.jsx(KB,{children:"Я"})]})}),M.jsx(VB,{})]}),{SpanSC:KB,TextSC:XB,HeaderSC:ZB,ContainerSC:QB}=GB(),JB=fe.memo(YB);var uI={};function e$(e){if(!e||typeof window>"u")return;const t=document.createElement("style");return t.setAttribute("type","text/css"),t.innerHTML=e,document.head.appendChild(t),e}Object.defineProperty(uI,"__esModule",{value:!0});var he=B;function t$(e){return e&&typeof e=="object"&&"default"in e?e:{default:e}}var Kt=t$(he);e$(`.marquee-container {
   overflow-x: hidden !important;
   display: flex !important;
   flex-direction: row !important;
@@ -466,8 +466,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
     height: 65px;
   }
 `,d$=fe.memo(u$),p$=()=>M.jsxs(f$,{children:[M.jsx(r$,{autoFill:!0,speed:100,style:{overflow:"hidden"},children:M.jsxs(m$,{children:["Frontend Developer ",M.jsx(g$,{children:"Frontend Developer"})," "]})}),M.jsx(d$,{})]}),{ContainerSC:f$,SpanSC:g$,TextSC:m$}=s$(),h$=fe.memo(p$),b$={text:`Очень приятно, что ты здесь находишься.
-Если тебе интересна моя персона пиши мне на емейл: \x1B[33mthogusus@gmail.com\x1B[0m
-Или в телеграмм \x1B[34mhttps://t.me/ri_yarm\x1B[0m`},y$=()=>(B.useEffect(()=>{console.log(b$.text)},[]),M.jsx(M.Fragment,{})),E$=te.footer`
+Или в телеграмм \x1B[34mhttps://t.me/rinath52\x1B[0m`},y$=()=>(B.useEffect(()=>{console.log(b$.text)},[]),M.jsx(M.Fragment,{})),E$=te.footer`
   width: 100%;
   min-height: 60px;
   background: #000;
