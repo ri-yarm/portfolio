@@ -466,7 +466,7 @@ export default Rinat;`,yU={'code[class*="language-"]':{color:"#f8f8f2",backgroun
     height: 65px;
   }
 `,d$=fe.memo(u$),p$=()=>M.jsxs(f$,{children:[M.jsx(r$,{autoFill:!0,speed:100,style:{overflow:"hidden"},children:M.jsxs(m$,{children:["Frontend Developer ",M.jsx(g$,{children:"Frontend Developer"})," "]})}),M.jsx(d$,{})]}),{ContainerSC:f$,SpanSC:g$,TextSC:m$}=s$(),h$=fe.memo(p$),b$={text:`Очень приятно, что ты здесь находишься.
-Или в телеграмм \x1B[34mhttps://t.me/rinath52\x1B[0m`},y$=()=>(B.useEffect(()=>{console.log(b$.text)},[]),M.jsx(M.Fragment,{})),E$=te.footer`
+Мне можно написать в телеграмм \x1B[34mhttps://t.me/rinath52\x1B[0m`},y$=()=>(B.useEffect(()=>{console.log(b$.text)},[]),M.jsx(M.Fragment,{})),E$=te.footer`
   width: 100%;
   min-height: 60px;
   background: #000;
